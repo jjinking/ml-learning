@@ -1,0 +1,11 @@
+
+# P4: Smartcab
+
+## Basic Driver Agent
+
+As expected, the agent moves around randomly. It does make it to the target location, sometimes in a short amount of time, other times in a very large amount of time, after the deadline has passed.
+
+## Identify and update state
+
+input: {'light': 'green', 'oncoming': None, 'right': None, 'left': None}
+gotta figure out what the "right" and "left", etc next to the cars mean vs at the top

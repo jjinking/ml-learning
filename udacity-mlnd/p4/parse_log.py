@@ -1,0 +1,12 @@
+import sys
+
+neg_reward_trials = set()
+for line in sys.stdin:
+    if line.split()[0] == "Simulator.run():":
+        trial = int(line.strip().split()[-1])
+        continue
+    elif line.split()[0] == "LearningAgent.update():":
+        if float(line.strip().split()[-1]) < 0:
+            neg_reward_trials.add(trial)
+
+print(max(neg_reward_trials))

@@ -1,0 +1,9 @@
+((*- extends 'report.tplx' -*))
+
+((* block author *))
+\author{Joseph Kim}
+((* endblock author *))
+
+% Disable input cells
+((* block input_group *))
+((* endblock input_group *))
